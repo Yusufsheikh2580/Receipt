@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "SimplyWise",
+    "slug": "simplywise-receipts-expenses",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#090D16"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.simplywise.receiptsexpenses",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SimplyWise needs camera access to scan your receipts, bills, and tax deduction documents.",
+        "NSPhotoLibraryUsageDescription": "SimplyWise needs photo library access to import digital receipt photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#090D16"
+      },
+      "package": "com.simplywise.receiptsexpenses",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow SimplyWise to access camera for instant receipt scanning."
+        }
+      ]
+    ]
+  }
+}
